@@ -1,0 +1,41 @@
+.main {
+  position: relative;
+  padding: 0px 20px;
+  width: 80vw;
+  max-width: 1400px;
+  overflow: hidden;
+}
+.h1 {
+  margin-bottom: 5px;
+}
+.titleProff {
+  font-size: 24px;
+  color: #475467;
+  margin-bottom: 30px;
+}
+
+.aboutBox {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-left: 60px;
+  border-radius: 10.209px;
+  background: #cfd3d8;
+  font-size: 18px;
+  background-image: url(https://emojigraph.org/media/apple/man-raising-hand-medium-skin-tone_1f64b-1f3fd-200d-2642-fe0f.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left 17px top 12px;
+}
+
+.superhero {
+  position: absolute;
+  bottom: -78px;
+  right: 0;
+}
+
+@media all and (max-width: 600px) {
+  .main {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,38 @@
+.stackCont {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4px 7px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #cfd3d8;
+  border-radius: 10px;
+  cursor: default;
+  transition: background 0.3s ease;
+}
+
+.stackCont:hover {
+  background-color: #823cc7;
+  
+}
+
+.stackCont:hover span {
+  color: #fff;
+  
+}
+
+.stackItem {
+  color: #101828;
+}
+
+.block {
+    margin-bottom: 30px;
+    max-width: 380px;
+    width: 100%;
+    min-width: 130px;
+}
+
+.stackBox {
+  width: 100%;
+  margin-bottom: 30px;
+}

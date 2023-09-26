@@ -1,0 +1,28 @@
+.leftColumn {
+  margin-right: 20px;
+}
+
+.firmContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.firmContainer:hover {
+  background-color: #cfd3d8;
+}
+
+.titleFirm {
+  margin-bottom: 10px;
+}
+.proffFirm {
+  margin-bottom: 10px;
+}
+
+.aboutFirm {
+  font-size: 16px;
+  color: #475467;
+}

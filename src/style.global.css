@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+/* @import url('./assets/img/blanchart.jpg');  */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(241, 235, 235);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #823cc7;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfd3d8;
+}
+h3,
+h4 {
+  color: #101828;
+}
+h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Button.cvBtn {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  position: absolute;
+  bottom: -70px;
+  left: 170px;
+  border: 2px solid #9c27b0;
+  border-radius: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  /* background-color: rgba(156, 39, 176, 0.2); */
+  transition: width 0.3s linear, border-radius 20s linear;
+  /* transition: border 0.5s linear; */
+}
+
+.Button.cvBtn:hover {
+  width: 170px;
+  padding-left: 25px;
+  border-radius: 20px;
+  border: 2px solid #9c27b0;
+  /* background-color: #cfd3d8; */
+  transition: width 0.3s linear, border-radius 0.1s linear;
+  /* transition: border 0.5s linear; */
+}
+
+/* .Button.cvBtn:active {
+  color: #000;
+  border: #000;
+} */
+
+.Button:hover > .btn-icon,
+.btn-icon {
+  position: absolute;
+  top: 3px;
+  left: 2.5px;
+}
+
+.itemBox {
+  flex-basis: 30%;
+  max-width: 30%;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  background-image: url(assets/img/blanchart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s;
+  background-color: #cfd3d8;
+  border-radius: 20px;
+}
+
+@media all and (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .Button.cvBtn {
+    width: 170px;
+    padding-left: 25px;
+    top: 75px;
+    left: 85px;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: shaking 5000ms ;
+    animation-iteration-count: infinite;
+    transition: border-radius .1s linear;
+  }
+  .Button.cvBtn:hover {
+    width: 170px;
+    padding-left: 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+  }
+  .Button:hover > .btn-icon,
+  .btn-icon {
+    top: 5px;
+    left: 4px;
+  }
+}
+
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  8.0% { transform: rotate(0deg); }
+  39.0% { transform: rotate(3deg); }
+  40.0% { transform: rotate(0deg); }
+  44.0% { transform: rotate(-3deg); }
+  49.0% { transform: rotate(2deg);}
+  55.0% { transform: rotate(0deg); }
+  62.0% { transform: rotate(1deg); }
+  70.0% { transform: rotate(0deg); }  
+}
