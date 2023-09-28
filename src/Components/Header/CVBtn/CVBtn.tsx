@@ -12,7 +12,8 @@ export function CVBtn() {
       setIsHovered(true);
       setIsVisible(true);
     } else {
-      setIsVisible(true);
+      setIsVisible(false);
+      // setIsHovered(false);
     }
   };
 
@@ -20,17 +21,13 @@ export function CVBtn() {
     handleResize();
     window.addEventListener('resize', handleResize);
 
-    let timeoutId: number;
     if (!isHovered) {
-      timeoutId = window.setTimeout(() => {
-        setIsVisible(false);
-      }, 300);
+      setIsVisible(false);
     } else {
       setIsVisible(true);
     }
 
     return () => {
-      window.clearTimeout(timeoutId);
       window.removeEventListener('resize', handleResize);
     };
   }, [isHovered]);
@@ -51,7 +48,9 @@ export function CVBtn() {
         setIsHovered(true);
       }}
       onMouseLeave={() => {
-        setIsHovered(false);
+        setTimeout(() => {
+          setIsHovered(false);
+        }, 300);
       }}
       onClick={openLinkInNewWindow}
     >
